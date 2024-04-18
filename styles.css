@@ -1,0 +1,680 @@
+/* Body Dark */
+body{
+    background-color: rgb(4, 8, 15);
+    margin: 0;
+}
+/* Body Dark End */
+/* Navbar Dark */
+.navbar{
+    opacity: 1;
+    background-color:rgb(0, 0, 0, 0);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+/* Navbar Dark End */
+
+/* navbar item styling */
+.nav-link{
+    color: white;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: Chakra Petch, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.125em;
+    text-decoration: none;
+    transition: color .35s;
+}
+.nav-link:hover{
+  color:#f32c46;
+}
+/* Desktop Align Nav-items center */
+@media (min-width: 768px) {
+    .navbar-nav {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  }
+/* Desktop Align Nav-items center end */
+
+/* Mobile Margin-left */
+  @media (max-width: 767px) {
+
+    .navbar-nav {
+      margin-left: 15px; /* Adjust the margin-left as per your preference */
+    }
+  }
+  /* Mobile Margin-left */
+/* navbar item styling end */
+
+/* Hero Section */
+.home-content{
+  opacity: 1;
+  /* padding-right: 350px; */
+}
+ .home-content h1{
+    color: white;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-family: Chakra Petch, sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 1.041em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    text-align: left;
+  
+}
+ .home-content p{
+    margin-bottom: 40px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.home-content .button-row{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .navbar{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+ .dropdown-menu {
+      background-color: #333 !important; /* Change dropdown background color */
+  }
+  .sponsors-wrapper{
+   
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        justify-content: space-between;
+  }
+  .sponsors-text{
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-right: 40px;
+    font-family: Chakra Petch, sans-serif;
+    font-weight: 700;
+    line-height: 1.111em;
+    color: white;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .sponsors-grid{
+
+    max-width: 886px;
+    grid-column-gap: 30px;
+    grid-template-rows: auto;
+    
+    align-items: center;
+   display: inline-block;
+   width: auto;
+   grid-row-gap: 40px;
+   grid-template-columns: auto auto;
+   justify-content: stretch;
+   grid-auto-columns: 1fr;
+    display: grid;
+  
+  }
+  .home{
+    position: relative;
+    overflow: hidden;
+  }
+  .upper{
+    padding-top: 80px;
+  }
+  #home{
+    margin-top: 20px;
+  }
+  .third{
+    margin-right: 20px;
+  }
+.home-about-wrapper{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+.home-about-content{
+  width: 100%;
+  display: inline-block;
+  justify-content: center;
+    align-items: center;
+}
+.instagram-grid{
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    display: grid;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.home-about-wrapper{
+  justify-content: center;
+    align-items: center;
+}
+  .home-about-video-wrapper{
+    width: 100%;
+    /* max-width: 100%; */
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    /* position: relative; */
+    overflow: hidden;
+
+  }
+  .home-matches-follow-wrapper{
+    padding: 30px;
+  }
+  .cota{
+    color: white;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 44px;
+    font-family: Chakra Petch, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.077em;
+  }
+  .h3-size{
+    font-size: 10px;
+  }
+  .h3-size span{
+    color: tomato;
+  }
+  .btn-light{
+    margin-top: 40px;
+  }
+  .image-wrapper{
+    display: flex;
+  }
+    .button-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  .button-primary{
+      margin-right: 0 !important;
+      width: 100%;
+  }
+  .button-secondary{
+    margin-right: 0 !important;
+    width: 100%;
+}
+    .button-row .btn {
+      margin-bottom: 10px; /* Adjust the margin as needed */
+   }
+    .container {
+         padding: 25px; /*  Adjust padding as needed  */
+      }
+    
+      #home {
+        text-align: center;
+      }
+      .container #home h1{
+        
+        font-size: 49px;
+      } 
+      .home-about-content h2{
+        font-size: 43px;
+        letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: Chakra Petch, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.077em;
+      }
+      .home-about-content {
+        flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+  }
+}
+.home-content .button-primary{
+    background-color: #f32c46;
+    color: white;
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    padding: 28px 40px;
+    font-family: Chakra Petch, sans-serif;
+    font-weight: 700;
+    line-height: 1.111em;
+    transition: box-shadow .15s, transform .15s;
+    color: #fff;
+    line-height: inherit;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 26px;
+}.button-primary{
+  background-color: #f32c46;
+  color: white;
+  text-align: center;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  padding: 28px 40px;
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 700;
+  line-height: 1.111em;
+  transition: box-shadow .15s, transform .15s;
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 26px;
+}
+
+ .home-content .button-secondary{
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 26px 38px;
+    font-family: Chakra Petch, sans-serif;
+    font-weight: 700;
+    line-height: 1.111em;
+    transition: box-shadow .15s, background-color .15s, border-color .15s, transform .15s;
+    color: #fff;
+    line-height: inherit;
+    cursor: pointer;
+    border-radius: 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ #home{
+    
+    margin-top: 50px;
+    padding-bottom: 44px;
+    /* position: relative; */
+    /* overflow: hidden; */
+  
+}
+.upper{
+  padding-bottom: 30PX;
+  padding-top: 164px;
+  background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template.jpg') no-repeat;
+}
+#home .home img{
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.sponsors-wrapper{
+  border-top: 1.5px solid rgba(255, 191, 207, .17);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom:50px;
+
+}
+.sponsors-text{
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 40px;
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 700;
+  line-height: 1.111em;
+  color: white;
+}
+.sponsors-grid{
+/* z-index: 100; */
+  width: 100%;
+  max-width: 886px;
+  grid-column-gap: 30px;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image{
+  max-width: 100%;
+    vertical-align: middle;
+    /* display: inline-block; */
+    margin-bottom: 20px;
+}
+.home-about{
+  align-items: center;
+    padding-bottom: 150px;
+    display: flex;
+    /* position: relative; */
+    overflow: hidden;
+    padding-top: 200px;
+}
+
+.container-default{
+  max-width: 1292px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+.home-about-wrapper{
+  /* justify-content: flex-end;
+    align-items: flex-end; */
+    display: flex;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.home-about-content{
+  z-index: 1;
+  max-width: 60%;
+  margin-bottom: 43px;
+  /* position: absolute; */
+  left: 0;
+  opacity: 1;
+  display: inline-block;
+}
+
+.home-about-content h2{
+  color:white;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-family: Chakra Petch, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.077em;
+
+}
+
+.home-about-content p{
+  max-width: 62%;
+    margin-bottom: 34px;
+    color: white;
+}
+
+.home-about-video-wrapper{
+  width: 100%;
+  max-width: 61%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* position: relative; */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.home-matches-follow-wrapper {
+  max-width: 482px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+.home-matches-follow-paragraph {
+  color: white;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-family: Chakra Petch, sans-serif;
+  font-weight: 700;
+  line-height: 1.333em;
+}
+.section-2 {
+  padding-top: 145px;
+  padding-bottom: 145px;
+  /* position: relative; */
+  overflow: hidden;
+  background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/603686c9b7df9139e41fb0f5_bg-cta-esports-template.jpg') no-repeat;
+
+}
+.cta-left {
+  max-width: 658px;
+  margin-right: 40px;
+}
+.cota{
+  color: white;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: Chakra Petch, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.077em;
+}
+.instagram{
+  padding-top: 200px;
+}
+.container-medium-638px {
+  max-width: 638px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.h3-size {
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-family: Chakra Petch, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.286em;
+  color: white;
+}
+.instagram-grid {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+.one{
+ background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708e2a43ff43aa946b_image-1-instagram-esports-template.jpg');
+}
+.two{
+  background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b707818036059a6a461_image-2-instagram-esports-template.jpg');
+ }
+ .three{
+  background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708e2a43ff43aa946b_image-1-instagram-esports-template.jpg');
+ }
+ .four{
+  background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/60368b708a74a47d39b46056_image-4-instagram-esports-template.jpg');
+ }
+.image-wrapper {
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  margin-right: 0;
+  padding-top: 70;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+  margin-right: 0;
+  margin-top: 50px;
+  padding-bottom: 270px;
+  margin-bottom: 200px;
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0);
+}
+.footer-wrapper{
+  justify-content: space-between;
+    margin-bottom: 120px;
+    display: flex;
+}
+
+.footer-main-content-wrapper{
+  max-width: 26%;
+}
+
+.footer-main-content-wrapper p{
+ color: #abafb2;
+}
+
+.footer-nav-wrapper{
+  width: 100%;
+    max-width: 67%;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.footer-nav-box {
+  margin-right: 40px;
+}
+
+.footer-nav-box.last {
+  margin-right: 0;
+}
+
+.footer-nav-title {
+  color: #f32c46;
+  letter-spacing: .1em;
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 1.1em;
+}
+.footer-nav-links li{
+  margin-bottom: 20px;
+}
+.footer-nav-links {
+  margin-bottom: 0px;
+  margin-right: 29px;
+  text-decoration: none;
+}
+.w-list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-nav-link-item{
+  display: list-item;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+.footer-nav-content {
+  flex-wrap: wrap;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: flex;
+}
+.footer-nav-link {
+  color: var(--neutral-100);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-family: Chakra Petch, sans-serif;
+  line-height: 1.111em;
+  text-decoration: none;
+  transition: transform .25s, color .3s;
+  display: inline-block;
+}
+.footer-social-media-icon {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  background-color: var(--primary-1);
+  color: var(--neutral-100);
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-family: Icons Esports Template, sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  display: flex;
+  overflow: hidden;
+}
+.social-media {
+  align-items: center;
+  display: flex;
+}
+.footer-small-print-wrapper {
+  text-align: center;
+  border-top: 1.5px solid rgba(255, 255, 255, .1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+
+.footer-small-print-wrapper a {
+    color:#f32c46;
+    text-decoration: underline;
+    transition: color .3s;
+}
+
+li{
+  list-style: none;
+}
+
+.team{
+  margin-top: 100px;
+}
