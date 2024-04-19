@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./style.css">
   <!-- Custom CSS -->
   <style>
-   /* Body Dark */
+ /* Body Dark */
 body{
     background-color: rgb(4, 8, 15);
     margin: 0;
@@ -113,11 +113,21 @@ body{
     flex-wrap: nowrap;
     text-align: center;
 }
+.h3-size span{
+  color: tomato;
+}
 
 @media (max-width: 767px) {
     .navbar{
         padding-top: 0;
         padding-bottom: 0;
+    }
+    .footer-nav-links {
+      margin-right: 0px !important;
+      max-width: 50% !important;
+    }
+    .upper{
+      padding-top: 0px;
     }
  .dropdown-menu {
       background-color: #333 !important; /* Change dropdown background color */
@@ -164,10 +174,10 @@ body{
     overflow: hidden;
   }
   .upper{
-    padding-top: 80px;
+    padding-top: 40px !important;
   }
   #home{
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .third{
     margin-right: 20px;
@@ -186,17 +196,24 @@ body{
     align-items: center;
 }
 .instagram-grid{
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-template-rows: auto;
-    grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr !important;
+  grid-column-gap: 0px !important;
+    grid-row-gap: 0px !important;
+    grid-template-rows: auto !important;
+    grid-auto-columns: 1fr !important;
     display: grid;
     padding-bottom: 0px;
     padding-top: 0px;
     max-width: 100%;
     vertical-align: middle;
-    display: inline-block;
+    /* display: inline-block; */
+    margin-bottom: 60px !important;
+}
+.image-wrapper{
+  padding-bottom: 0 !important;
+  margin-bottom: 0px !important;
+  padding-top: 0px !important;
+  margin-top: 0px !important;
 }
 .home-about-wrapper{
   justify-content: center;
@@ -222,15 +239,19 @@ body{
     margin-top: 0;
     margin-bottom: 44px;
     font-family: Chakra Petch, sans-serif;
-    font-size: 32px;
+    font-size: 29px  !important;
     font-weight: 700;
     line-height: 1.077em;
   }
   .h3-size{
     font-size: 10px;
   }
-  .h3-size span{
-    color: tomato;
+  
+  .margin-nav{
+    margin-bottom: 50px;
+  }
+  .footer-logo-container-margin{
+    margin-bottom: 30px;
   }
   .btn-light{
     margin-top: 40px;
@@ -255,16 +276,31 @@ body{
       margin-bottom: 10px; /* Adjust the margin as needed */
    }
     .container {
-         padding: 25px; /*  Adjust padding as needed  */
+         padding-left: 25px; /*  Adjust padding as needed  */
+         padding-right: 25px;
       }
     
       #home {
         text-align: center;
+    
       }
       .container #home h1{
         
-        font-size: 49px;
+        font-size: 29px;
+
       } 
+      .home-about-content{
+        max-width: 100% !important;
+      }
+      .home-about-video-wrapper{
+        max-width: 100% !important;
+      }
+      .font-size-29{
+        font-size: 29px !important;
+      }
+      .cota{
+        font-size: 29px;
+      }
       .home-about-content h2{
         font-size: 43px;
         letter-spacing: .05em;
@@ -429,17 +465,11 @@ body{
 
 }
 
-.home-about-wrapper{
-  /* justify-content: flex-end;
-    align-items: flex-end; */
-    display: flex;
-    /* position: relative; */
-    overflow: hidden;
-}
+
 
 .home-about-content{
   z-index: 1;
-  max-width: 60%;
+  max-width: 50%;
   margin-bottom: 43px;
   /* position: absolute; */
   left: 0;
@@ -461,20 +491,21 @@ body{
 }
 
 .home-about-content p{
-  max-width: 62%;
+  max-width: 100%;
     margin-bottom: 34px;
     color: white;
 }
 
 .home-about-video-wrapper{
   width: 100%;
-  max-width: 61%;
+  max-width: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
   /* position: relative; */
   overflow: hidden;
-  display: inline-block;
+  /* display: inline-block; */
+  /* background: url('https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template.jpg'); */
 }
 
 .home-matches-follow-wrapper {
@@ -559,7 +590,7 @@ body{
   justify-content: center;
   align-items: center;
   
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   border: 0;
   margin-right: 0;
@@ -617,11 +648,13 @@ footer{
 .footer-nav-links li{
   margin-bottom: 20px;
 }
+
 .footer-nav-links {
   margin-bottom: 0px;
-  margin-right: 29px;
+  margin-right: 29px ;
   text-decoration: none;
 }
+
 .w-list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -639,7 +672,7 @@ footer{
   display: flex;
 }
 .footer-nav-link {
-  color: var(--neutral-100);
+  color: white;
   letter-spacing: .05em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -721,56 +754,121 @@ li{
     </nav>
   </header>
 
+  <div class="upper">
   <div class="container">
     <section id="home" class="py-5">
      
     <div class="home">
-        <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template.jpg" alt="Esports About - eSports Webflow Template" sizes="100vw" srcset="https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template-p-500.jpeg 500w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template-p-2000.jpeg 2000w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template-p-2600.jpeg 2600w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/603810f50c0e56435c5367de_bg-blog-hero-esports-template.jpg 2880w" class="bg team-members-hero" style="will-change: transform; transform: translate3d(0px, -6.37056px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
-    <div class="home-content animate__animated animate__backInLeft team">
+    <!-- <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template.jpg" alt="Next Generation Team - eSports Webflow Template" sizes="100vw" srcset="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-1600.jpeg 1600w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-2000.jpeg 2000w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template-p-2600.jpeg 2600w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aa3bd811e11ae79d2a4d_bg-home-hero-esports-template.jpg 2880w" class="bg home-hero  animate__animated animate__backInDown" style="will-change: transform; transform: translate3d(0px, -21.4425px, 0px) scale3d(1.1, 1.1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div> -->
+    <div class="home-content animate__animated animate__backInLeft">
     <h1>NEXT-GENERATION
       ESPORTS TEAM</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       <br>Et quis odio vestibulum nunc, neque integer purus.</p>
+    <div class="button-row">
+    <a href="#" class="btn button-primary">Buy Merch</a>
+    <a href="#" class="button-secondary">Meet the team</a>
     </div>
+  </div>
+  <div style="opacity: 1;" class="sponsors-wrapper ">
+    <div style="opacity: 1;" class="sponsors-text">Sponsored By</div>
+    <div class="sponsors-grid">
+      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/655d0281f3d4ea831f20acbc_business-logo-esports-x-webflow-template.svg" alt="Business Logo - eSports X Webflow Template" style="opacity: 1;" class="image sponsor animate__animated animate__backInDown">
+      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/655d028022f12f36c8097ee3_company-logo-esports-x-webflow-template.svg" alt="Company Logo - eSports X Webflow Template" style="opacity: 1;" class="image sponsor animate__animated animate__backInDown">
+      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/655d02800faea51c24433dd6_enterprise-logo-esports-x-webflow-template.svg" alt="Enterprise Logo - eSports X Webflow Template" style="opacity: 1;" class="image third sponsor animate__animated animate__backInDown">
+      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/655d0280627079b2264a4820_startup-logo-esports-x-webflow-template.svg" alt="Startup Logo - eSports X Webflow Template" style="opacity: 1;" data-w-id="ebe6ae90-67bb-7cdb-fd45-7fbde637d6ee" class="image sponsor animate__animated animate__backInDown">
+    </div>
+  </div>
     </section>
   </div>
-
-  <div class="section home-about">
-<div class="container-default">
-  <div class="home-about-wrapper">
-    <div class="home-about-content">
-      <h2>About the Dragon Esports Team</h2>
+</div>
+  <div class="home-about">
+<div class="container-default ">
+  <div class="home-about-wrapper row ">
+    <div class="home-about-content col-md-6 col-lg-6 col-sm-12 animate__animated animate__backInLeft">
+      <h2 class="font-size-29">About the Dragon Esports Team</h2>
       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis convallis tortor, malesuada vitae tortor. Dignissim ac aliquam ut sed eu. Eget nulla elit, ac habitant.</p>
-      <a href="#" class="button-primary ">Meet the team</a>
+      <a href="#" class="btn button-primary ">Meet the team</a>
     </div>
-    <div class="home-about-video-wrapper">
-      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template.jpg" alt="About The Dragon Esports Team - eSports Webflow Template" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 58vw, 794.21875px" srcset="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template.jpg 1522w" class="image home-about-video" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <div class="home-about-video-wrapper col-md-6 col-lg-6 col-sm-12 animate__animated animate__backInLeft">
+      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template.jpg" alt="About The Dragon Esports Team - eSports Webflow Template" sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1919px) 58vw, 794.21875px" srcset="https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template-p-1080.jpeg 1080w, https://assets-global.website-files.com/60358955e12a8a2413b99edc/6035aac81fc3b44b1a3b1e2d_image-home-about-video-esports-template.jpg 1522w" class="image home-about-video animate__animated animate__backInDown" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     </div>
   </div>
 </div>
   </div>
 
+  <div style="opacity: 1;" class="home-matches-follow-wrapper">
+    <p class="home-matches-follow-paragraph">Follow us on Twitch to get notifications about our upcoming matches</p>
+    <a href="https://www.twitch.tv/" target="_blank" class="button-primary w-button">Follow Us</a>
+  
+  </div>
+  <div class="section-2">
+    <div class="container-default w-container">
+      <div class="cta-wrapper">
+        <div class="split-content cta-left" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          <h2 class="title cota font-size-29">Get our merch <br>&amp; support our Team</h2>
+        </div>
+        <div class="split-content cta-right" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
+          <a href="/shop" class="button-primary btn btn-light w-button">Get Merch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="instagram">
+  <div class="container-medium-638px ">
+    <h2 class="title h3-size " style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">Follow us on <span class="accent-text">Instagram</span></h2>
+  </div>
+  <div class="w-layout-grid instagram-grid ">
+    
+    <a href="https://www.instagram.com/" target="_blank" class="image-wrapper one" style="opacity: 1;">
+     
+      <div class="instagram-filter-hover" style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+      </div>
+      <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/603e9cfac160e81b28111285_icon-instagram-esports-template.svg" loading="lazy" alt="Instagram - eSports Webflow Template" class="image instagram-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"></a>
+      <a data-w-id="f854e857-3ce5-cd16-4b15-3f2c61295142" href="https://www.instagram.com/" target="_blank" class="image-wrapper two w-inline-block" style="opacity: 1;">
+  
+        <div class="instagram-filter-hover" style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+        <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/603e9cfac160e81b28111285_icon-instagram-esports-template.svg" loading="lazy" alt="Instagram - eSports Webflow Template" class="image instagram-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"></a>
+        <a  href="https://www.instagram.com/" target="_blank" class="image-wrapper three" style="opacity: 1;">
+         
+          <div class="instagram-filter-hover" style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div><img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/603e9cfac160e81b28111285_icon-instagram-esports-template.svg" loading="lazy" alt="Instagram - eSports Webflow Template" class="image instagram-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"></a>
+          <a  href="https://www.instagram.com/" target="_blank" class="image-wrapper four" style="opacity: 1;">
+            <div class="instagram-filter-hover" style="transform: translate3d(0px, 100%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div><img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/603e9cfac160e81b28111285_icon-instagram-esports-template.svg" loading="lazy" alt="Instagram - eSports Webflow Template" class="image instagram-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(0.3, 0.3, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0;"></a></div></div>
   <footer class="text-white">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-3 footer-logo-container-margin  animate__animated animate__backInLeft">
                 <a href="#" class="footer-logo-container">
                     <img src="https://assets-global.website-files.com/60358955e12a8a2413b99edc/60359b25d811e171f69cedde_logo-esports-template.svg" alt="eSports Webflow Template - Logo" class="footer-logo">
                 </a>
                 <p class="paragraph footer-main-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis convallis tortor.</p>
             </div>
-            <div class="col-md-4 col-lg-4">
+          
+            <div class="col-md-3  animate__animated animate__backInLeft">
+              
                 <h2 class="title footer-nav-title">Pages</h2>
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-6 margin-nav">
                 <ul class="footer-nav-links">
                     <li><a href="#" class="footer-nav-link">Home</a></li>
                     <li><a href="/about" class="footer-nav-link">About</a></li>
                     <li><a href="#" class="footer-nav-link">Team</a></li>
-                    <li><a href="https://esportstemplate.webflow.io/team/john-carter" class="footer-nav-link">Team Individual</a></li>
+                    <li><a href="https://esportstemplate.webflow.io/team/john-carter" class="footer-nav-link">Team</a></li>
                     <li><a href="/blog" class="footer-nav-link">News</a></li>
                     <li><a href="https://esportstemplate.webflow.io/article/our-new-branded-headphones-are-now-for-sale" class="footer-nav-link">News Individual</a></li>
                 </ul>
+              </div>
+                <div class="margin-nav col-sm-6 col-md-6 col-lg-6">
+                <ul  class="footer-nav-links">
+                  <li class="footer-nav-link-item"><a href="/shop" class="footer-nav-link">Shop</a></li>
+                  <li class="footer-nav-link-item"><a href="https://esportstemplate.webflow.io/product/esports-team-shirt-black-line" class="footer-nav-link">Shop CMS</a></li>
+                  <li class="footer-nav-link-item"><a href="/contact" class="footer-nav-link">Contact</a></li>
+                  <li class="footer-nav-link-item"><a href="/sponsors" class="footer-nav-link">Sponsors</a></li>
+                </ul>
+              </div>
+              </div>
             </div>
-            <div class="col-md-4 col-lg-4">
+            <div class="col-md-3 margin-nav  animate__animated animate__backInLeft">
                 <h2 class="title footer-nav-title">Utility Pages</h2>
                 <ul class="footer-nav-links">
                     <li><a href="/utility-pages/style-guide" class="footer-nav-link">Style guide</a></li>
@@ -782,36 +880,27 @@ li{
                     <li><a href="https://brixtemplates.com/more-templates" class="footer-nav-link special">Browse More Templates</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-lg-4">
-                <h2 class="title footer-nav-title">Follow Us</h2>
-                <ul class="footer-nav-links">
-                    <li><a href="https://www.facebook.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Facebook</a></li>
-                    <li><a href="https://twitter.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Youtube</a></li>
-                    <li><a href="https://www.twitch.tv/" target="_blank" class="footer-nav-link social-media w-inline-block">Twitch</a></li>
-                    <li><a href="https://www.tiktok.com/" target="_blank" class="footer-nav-link social-media w-inline-block">TikTok</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <!-- Additional content goes here -->
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <!-- Additional content goes here -->
-            </div>
+            <div class="col-md-3 margin-nav  animate__animated animate__backInLeft">
+              <h2 class="title footer-nav-title">Follow Us</h2>
+              <ul class="footer-nav-links">
+                  <li><a href="https://www.facebook.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Facebook</a></li>
+                  <li><a href="https://twitter.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Twitter</a></li>
+                  <li><a href="https://www.instagram.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Instagram</a></li>
+                  <li><a href="https://www.youtube.com/" target="_blank" class="footer-nav-link social-media w-inline-block">Youtube</a></li>
+                  <li><a href="https://www.twitch.tv/" target="_blank" class="footer-nav-link social-media w-inline-block">Twitch</a></li>
+                  <li><a href="https://www.tiktok.com/" target="_blank" class="footer-nav-link social-media w-inline-block">TikTok</a></li>
+              </ul>
+          </div>
         </div>
         <div class="row">
             <div class="col">
-                <div class="footer-small-print-wrapper">
-                    <div>Copyright © eSports | Designed by <a href="#" target="_blank">Immanuel</a> - Powered by <a href="#" target="_blank">Immanuel</a></div>
+                <div class="footer-small-print-wrapper  animate__animated animate__backInDown">
+                    <div>Copyright © eSports | Designed by <a href="#" target="_blank">________</a> - Powered by <a href="#" target="_blank">_________</a></div>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-
 
   <!-- Bootstrap JS (Optional) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
